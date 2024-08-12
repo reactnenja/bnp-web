@@ -20,7 +20,7 @@ export const CookieBanner = () => {
     if (!isVisible) return null;
 
     return (
-        <div className="fixed bottom-0 left-0 w-full bg-black text-white p-4 h-[200px] flex justify-between items-center z-50">
+        <div className="fixed bottom-0 left-0 w-full bg-black text-white p-4 flex justify-between items-center z-50">
             <p className="text-sm">
                 Biz veb-saytimizda sizga eng yaxshi tajribani taqdim etishimiz
                 uchun cookie-fayllardan foydalanamiz. Agar siz ushbu saytdan
