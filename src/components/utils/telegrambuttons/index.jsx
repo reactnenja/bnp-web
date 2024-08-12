@@ -12,8 +12,8 @@ const TelegramButton = () => {
             transition={{ duration: 1 }}
             whileHover={{ scale: 1.1 }}
         >
-            <div className="text-sm text-gray-700  font-medium">
-                Bizga yozing!
+            <div className="text-xl text-gray-700  font-medium">
+                <span> Bizga yozing!</span>
             </div>
             <Link
                 to="https://t.me/ulugbekeshnazarovuz"
