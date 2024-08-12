@@ -5,7 +5,7 @@ import { BsTelegram } from "react-icons/bs";
 const TelegramButton = () => {
     return (
         <motion.div
-            className="fixed bottom-4 right-4 flex justify-end border-2 border-zinc-400/25 z-50 space-x-2 p-2 px-11 bg-white rounded-full shadow-lg animate-pulse"
+            className="fixed bottom-12 right-4 flex justify-end border-2 border-zinc-400/25 z-50 space-x-2 p-2 px-11 bg-white rounded-full shadow-lg animate-pulse"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
