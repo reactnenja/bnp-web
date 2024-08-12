@@ -21,7 +21,7 @@ const TelegramButton = () => {
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10  bg-blue-500 rounded-full text-white shadow-lg"
             >
-                <BsTelegram className="text-2xl" />
+                <BsTelegram className="text-3xl" />
             </Link>
         </motion.div>
     );
