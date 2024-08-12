@@ -1,5 +1,5 @@
-import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { SlArrowUp } from "react-icons/sl";
 
 const LanguageDropdown = () => {
     const [language, setLanguage] = useState("uz");
@@ -21,8 +21,8 @@ const LanguageDropdown = () => {
                 <option value="ru">Русский</option>
                 <option value="en">English</option>
             </select>
-            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                <ChevronDown className="h-4 w-4" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2  text-gray-700">
+                <SlArrowUp className="h-4 w-4 rotate-180" />
             </div>
         </div>
     );

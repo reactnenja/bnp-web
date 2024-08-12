@@ -45,7 +45,7 @@ const Collections = () => {
                         <p className="text-gray-600">{product.category}</p>
                         <Link
                             to={`/product/${product.id}`}
-                            className="text-indigo-600 hover:text-indigo-900 mt-4 inline-block"
+                            className="text-indigo-600 hover:bg-black p-4 rounded-md hover:text-white duration-700 transition-all  mt-4 inline-block"
                         >
                             View Details
                         </Link>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Send } from "lucide-react";
 import React from "react";
+import { FaTelegram } from "react-icons/fa6";
 
 const TelegramButton = () => {
     return (
@@ -21,7 +21,7 @@ const TelegramButton = () => {
                     Bizga yozing!
                 </span>
                 <span className="w-14 h-14 rounded-full flex justify-center items-center text-black shadow-lg">
-                    <Send className="w-8 h-8" />
+                    <FaTelegram className="w-8 h-8" />
                 </span>
             </a>
         </motion.div>
