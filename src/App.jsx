@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import ProductDetails from "./pages/ProductDetails ";
 const App = () => {
     return (
         <ErrorBoundary>
@@ -18,6 +19,7 @@ const App = () => {
                 <Route exact path="/" element={<Home />} />
                 <Route path="/about-me" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/product/:id" element={<ProductDetails />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
         </ErrorBoundary>
