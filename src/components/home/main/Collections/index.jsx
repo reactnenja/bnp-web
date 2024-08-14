@@ -1,24 +1,22 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
-import products from "../../../../assets/data/autumn";
-
-const Collections = () => {
+const Collections = ({ heading, paragriph, product }) => {
     return (
         <div className="container-full mx-auto px-6 py-8">
             <div className="mb-5 py-6">
-                <h3 className="text-6xl font-bold font-sans text-center text-black">
-                    Qish kolleksiyasi
+                <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold font-sans text-center text-black">
+                    {heading}
                 </h3>
-                <p className="text-center text-xl text-black font-sans font-medium">
-                    Buxoro tabiiy mahsuloti
+                <p className="text-lg sm:text-xl md:text-2xl text-black font-sans font-medium text-center">
+                    {paragriph}
                 </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-5 md:grid-cols-2 sm:grid-cols-2 gap-8">
-                {products.map((product) => (
+                {product.map((item) => (
                     <motion.div
-                        key={product.id}
-                        className=" cursor-pointer border p-4 rounded-lg shadow-lg"
+                        key={item.id}
+                        className="cursor-pointer border p-4 rounded-lg shadow-lg"
                         initial={{ scale: 1 }}
                         animate={{ rotate: 0, scale: 1 }}
                         transition={{
@@ -29,8 +27,8 @@ const Collections = () => {
                         }}
                     >
                         <motion.img
-                            src={product.img}
-                            alt={product.name}
+                            src={item.img}
+                            alt={item.name}
                             className="w-full h-64 object-cover rounded-md mb-4"
                             whileHover={{ scale: 0.9 }}
                             transition={{ duration: 0.4 }}
@@ -40,11 +38,11 @@ const Collections = () => {
                             whileHover={{ color: "#4f46e5" }}
                             transition={{ duration: 0.4 }}
                         >
-                            {product.name}
+                            {item.name}
                         </motion.h2>
-                        <p className="text-gray-600">{product.category}</p>
+                        <p className="text-gray-600">{item.category}</p>
                         <Link
-                            to={`/product/${product.id}`}
+                            to={`/product/${item.id}`}
                             className="text-indigo-600 hover:bg-black p-4 rounded-md hover:text-white duration-700 transition-all  mt-4 inline-block"
                         >
                             View Details

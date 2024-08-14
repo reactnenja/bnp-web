@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
-import ImageSpa from "../../../assets/img/nature.png";
 
-const SubContent = () => {
+const SubContent = (props) => {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -27,10 +26,13 @@ const SubContent = () => {
             initial="hidden"
             animate="visible"
         >
-            <div className="bg-[#616884] rounded-2xl p-10 relative flex flex-col items-center lg:flex-row lg:items-stretch lg:h-[80vh] max-h-[800px] overflow-hidden">
+            <div
+                style={{ backgroundColor: props.background }}
+                className="rounded-2xl p-10 relative flex flex-col items-center lg:flex-row lg:items-stretch lg:h-[80vh] max-h-[1400px] overflow-hidden"
+            >
                 <div className="absolute inset-0 z-10">
                     <img
-                        src={ImageSpa}
+                        src={props.imageBg}
                         alt="Nature"
                         className="w-full h-full object-cover"
                     />
@@ -54,9 +56,9 @@ const SubContent = () => {
                         className="w-full lg:w-1/3 flex justify-center items-center"
                     >
                         <img
-                            src={ImageSpa}
+                            src={props.imageCenter}
                             alt="Nature"
-                            className="w-full max-w-[300px] h-auto object-contain rounded-lg shadow-lg"
+                            className="w-full max-w-[900px] h-auto object-contain rounded-lg shadow-lg"
                         />
                     </motion.div>
 
