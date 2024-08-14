@@ -5,7 +5,7 @@ import { FaTelegram } from "react-icons/fa6";
 const TelegramButton = () => {
     return (
         <motion.div
-            className="fixed top-[596px] right-4 flex justify-end items-center border-2 border-zinc-400/25 z-50 space-x-2 p-2 px-4 bg-white rounded-full shadow-lg animate-pulse"
+            className="fixed top-[596px] right-4  z-50 backdrop-blur-md p-2 rounded-full flex justify-end items-center "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
@@ -17,7 +17,7 @@ const TelegramButton = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 justify-between "
             >
-                <span className="text-xl text-gray-700 font-medium inline-block">
+                <span className="text-xl text-gray-700 bg-white border-2 rounded-full px-5 py-2 font-medium shadow-lg inline-block  animate-pulse">
                     Bizga yozing!
                 </span>
                 <span className="w-14 h-14 rounded-full flex justify-center items-center text-black shadow-lg">
