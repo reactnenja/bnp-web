@@ -21,10 +21,10 @@ const Footer = () => {
                         type: "spring",
                         stiffness: 80,
                     }}
-                    className="grid grid-cols-1 md:grid-cols-4 gap-8"
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
                 >
                     {/* About Section */}
-                    <div className="mb-8 md:mb-0">
+                    <div className="mb-8">
                         <img
                             src={Logos}
                             alt="Bukhara Natural Product"
@@ -38,7 +38,7 @@ const Footer = () => {
                     </div>
 
                     {/* Menu Section */}
-                    <div className="mb-8 md:mb-0">
+                    <div className="mb-8">
                         <h4 className="text-lg font-semibold mb-4">Menyu</h4>
                         <ul className="space-y-2">
                             {[
@@ -50,7 +50,7 @@ const Footer = () => {
                                 <li key={item}>
                                     <a
                                         href="#"
-                                        className="text-gray-400 hover:text-white transition-colors duration-300"
+                                        className="text-gray-400 hover:text-black transition-colors duration-300"
                                     >
                                         {item}
                                     </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                     </div>
 
                     {/* Contact Section */}
-                    <div>
+                    <div className="mb-8">
                         <h4 className="text-lg font-semibold mb-4">
                             Kontaktlar
                         </h4>
@@ -68,7 +68,7 @@ const Footer = () => {
                             <FaPhoneAlt className="mr-2 text-xl" />
                             <a
                                 href="tel:+998933837585"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 +998 93 383 75 85
                             </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                             <FaPhoneAlt className="mr-2 text-xl" />
                             <a
                                 href="tel:+998939607800"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 +998 93 960 78 00
                             </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                             <FaEnvelope className="mr-2 text-xl" />
                             <a
                                 href="mailto:bnpuz@bk.ru"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 bnpuz@bk.ru
                             </a>
@@ -94,24 +94,26 @@ const Footer = () => {
                         <div className="flex space-x-4">
                             <a
                                 href="https://instagram.com/bnp_fabrik"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 <FaInstagram className="text-xl" />
                             </a>
                             <a
                                 href="https://facebook.com/bnp_fabrik"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 <FaFacebookF className="text-xl" />
                             </a>
                             <a
                                 href="https://twitter.com/bnp_fabrik"
-                                className="text-gray-400 hover:text-white transition-colors duration-300"
+                                className="text-gray-400 hover:text-black transition-colors duration-300"
                             >
                                 <FaTwitter className="text-xl" />
                             </a>
                         </div>
                     </div>
+
+                    {/* Subscription Section */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -120,29 +122,27 @@ const Footer = () => {
                             type: "spring",
                             stiffness: 80,
                         }}
-                        className="mt-6 p-4 w-full md:w-[500px] "
+                        className="sm:col-span-2 lg:col-span-1 xl:w-[400px]"
                     >
                         <h4 className="text-lg font-semibold mb-4">
                             Elektron pochtamizga obuna bo'ling
                         </h4>
-                        <form className="flex flex-col gap-2 sm:flex-row">
+                        <form className="flex flex-col sm:flex-row gap-2">
                             <input
                                 type="email"
                                 placeholder="Elektron pochtangizni kiriting"
-                                className="flex-grow p-2 mb-2 sm:mb-0 border focus:outline-none focus:ring-2 focus:ring-zinc-800"
+                                className="flex-grow p-2 border focus:outline-none focus:ring-2 focus:ring-zinc-800"
                                 aria-label="Enter your email"
                             />
                             <button
                                 type="submit"
-                                className="bg-zinc-800  text-white px-4 py-2  hover:bg-zinc-900 transition-colors duration-300"
+                                className="bg-zinc-800 text-white px-2 py-2 hover:bg-zinc-900 transition-colors duration-300"
                             >
                                 Obuna bo'ling
                             </button>
                         </form>
                     </motion.div>
                 </motion.div>
-
-                {/* Subscription Form */}
             </div>
 
             {/* Footer Bottom */}
